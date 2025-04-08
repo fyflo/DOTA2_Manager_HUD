@@ -1,0 +1,1257 @@
+@import url("https://fonts.googleapis.com/css?family=Manjari&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manjari", sans-serif;
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  /*
+    position: absolute;
+    */
+  bottom: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: Reaver;
+  background-color: transparent;
+  user-select: none;
+  text-shadow: 0px 0px 6px var(--blk-shadow);
+}
+
+#top_panel {
+  width: 1600px;
+  height: 70px;
+  position: fixed;
+  /*top: 10px;*/
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: var(--main-panel-color); */
+}
+
+#left_team {
+  position: relative;
+  float: left;
+  width: 390px;
+  height: 70px;
+  background-color: var(--main-panel-color);
+}
+
+#right_team {
+  position: relative;
+  float: right;
+  width: 390px;
+  height: 70px;
+  background-color: var(--main-panel-color);
+}
+
+#main {
+  position: relative;
+  width: 310px;
+  height: 70px;
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  vertical-align: text-bottom;
+  line-height: 80px;
+  font-size: 30px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  /*color: var(--dev-purple);*/
+}
+
+#main2 {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  vertical-align: text-bottom;
+  line-height: 80px;
+  font-size: 30px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  /* overflow: hidden; */
+  white-space: nowrap;
+  /*color: var(--dev-purple);*/
+}
+
+#left_team #main {
+  float: left;
+}
+
+#right_team #main {
+  float: right;
+}
+
+#logo {
+  position: relative;
+  width: 80px;
+  height: 70px;
+  background-color: black;
+}
+
+#left_team #logo {
+  float: left;
+}
+
+#right_team #logo {
+  float: right;
+}
+
+#left_team2 #logo {
+  float: left;
+}
+
+#right_team2 #logo {
+  float: right;
+}
+
+#team_logo {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  top: 5px;
+}
+
+#team_logo2 {
+  position: relative;
+  width: 60px;
+  height: 43px;
+  top: 5px;
+  filter: drop-shadow(1px 1px 0px #000000);
+}
+
+#left_team #team_logo {
+  float: left;
+  left: 10px;
+}
+
+#right_team #team_logo {
+  float: right;
+  right: 10px;
+}
+
+#left_team2 #team_logo2 {
+  /* float: left; */
+  /*left: 50px;*/
+}
+
+#right_team2 #team_logo2 {
+  /* float: revert; */
+  /*right: -56px;*/
+}
+
+#best_of {
+  position: relative;
+  width: 30px;
+  height: 70px;
+}
+
+#left_team #best_of {
+  float: left;
+}
+
+#right_team #best_of {
+  float: right;
+}
+
+#score {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  vertical-align: text-bottom;
+  line-height: 80px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#left_team #score {
+  float: left;
+  /*color: var(--dev-purple);*/
+}
+
+#right_team #score {
+  float: right;
+  /*color: var(--dev-purple);*/
+}
+
+.bar {
+  position: relative;
+  width: 5px;
+  height: 50px;
+  top: 10px;
+  background-color: var(--dev-purple);
+}
+
+.block1,
+.block2,
+.block3,
+.block4,
+.block5 {
+  width: 10px;
+  height: 10px;
+  background-color: var(--white-dull);
+  opacity: 0;
+}
+
+.block1 {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+
+.block2 {
+  position: absolute;
+  left: 10px;
+  top: 30px;
+}
+
+.block3 {
+  position: absolute;
+  left: 10px;
+  top: 45px;
+}
+
+.block4 {
+  position: absolute;
+  left: 10px;
+  top: 22.5px;
+}
+
+.block5 {
+  position: absolute;
+  left: 10px;
+  top: 37.5px;
+}
+
+#left_team .bar {
+  float: left;
+}
+
+#right_team .bar {
+  float: right;
+}
+
+#center_section {
+  position: relative;
+  float: left;
+  width: 120;
+  height: 70px;
+}
+
+#round_timer {
+  position: absolute;
+  float: left;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 50px;
+}
+
+#round_timer_text {
+  position: relative;
+  width: 120px;
+  height: 70px;
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  vertical-align: text-bottom;
+  line-height: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  /*color: var(--dev-purple);*/
+
+  animation-duration: 0.25s;
+  animation-iteration-count: 1;
+}
+
+#round_number {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50px;
+  float: left;
+  width: 120px;
+  height: 20px;
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  vertical-align: text-bottom;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#observed {
+  width: 140px;
+  height: 250px;
+  position: fixed;
+  bottom: 0px;
+  left: 21.5%;
+  transform: translateX(-50%);
+  /*background-color: var(--main-panel-color)*/
+}
+
+#obs_avatar {
+  width: 170px;
+  height: 200px;
+  position: absolute;
+}
+
+/*#obs_img1,
+#obs_img2,
+#obs_img3,
+#obs_img4,
+#obs_img5,
+#obs_img6,
+#obs_img7,
+#obs_img8,
+#obs_img9,
+#obs_img0,
+img#obs_img_no_avatar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*background-image: url("/storage/player_silhouette.webp");*/
+  /*top: 50px;
+  display: none;
+}
+
+#obs_img_no_avatar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("/uploads/player_silhouette.webp");
+  top: 50px;
+  display: none;
+}*/
+
+#obs_avatar_img {
+  
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*background-image: url("/storage/player_silhouette.webp");*/
+  top: 50px;
+
+}
+
+#obs_img_no_avatar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("/uploads/player_silhouette.webp");
+  top: 50px;
+}
+
+#obs_lane1 {
+  width: 480px;
+  height: 90px;
+  position: relative;
+  left: 140px;
+}
+
+#obs_lane2 {
+  width: 480px;
+  height: 50px;
+  position: relative;
+  left: 140px;
+}
+
+#obs_team {
+  width: 45px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  background-color: var(--main-panel-color);
+}
+
+#obs_team_img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 5px;
+  top: 5px;
+}
+
+#obs_alias {
+  width: 170px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  vertical-align: text-bottom;
+  line-height: 50px;
+  font-size: 26px;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /*background-color: var(--main-panel-color);*/
+}
+
+#obs_realname_text {
+  width: 240px;
+  height: 18px;
+  position: relative;
+  left: 5px;
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  vertical-align: text-bottom;
+  line-height: 28px;
+  font-size: 12px;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--white-dull);
+}
+
+#obs_realname_text {
+  width: 240px;
+  height: 18px;
+  position: relative;
+  left: 5px;
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  vertical-align: text-bottom;
+  line-height: 28px;
+  font-size: 12px;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--white-dull);
+}
+
+#obs_country {
+  width: 45px;
+  height: 50px;
+  position: absolute;
+  left: 295px;
+  background-color: var(--main-panel-color);
+}
+
+#obs_country_img {
+  width: 40px;
+  height: 27px;
+  position: relative;
+  right: 0px;
+  top: 12px;
+}
+
+#obs_lane3 {
+  width: 100%;
+  height: 50px;
+}
+
+#obs_lane3_left_pole {
+  width: 5px;
+  height: 40px;
+  position: absolute;
+  left: -5px;
+  bottom: 5px;
+  background-color: var(--dev-purple);
+}
+
+#obs_left_section {
+  width: 140px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+  background-color: var(--main-panel-color);
+}
+
+#obs_health_section {
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  left: 0px;
+}
+
+#obs_health_img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 4px;
+  top: 10px;
+}
+
+#obs_health_text {
+  width: 35px;
+  height: 30px;
+  position: relative;
+  left: 34px;
+  top: -20px;
+  font-family: "Manjari", sans-serif;
+  text-align: left;
+  vertical-align: text-bottom;
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--white-full);
+}
+
+#obs_armor_section {
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  left: 70px;
+}
+
+#obs_armor_img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 3px;
+  top: 10px;
+}
+
+#obs_armor_text {
+  width: 35px;
+  height: 30px;
+  position: relative;
+  left: 32px;
+  top: -20px;
+  font-family: "Manjari", sans-serif;
+  text-align: left;
+  vertical-align: text-bottom;
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--white-full);
+}
+
+#obs_middle_section {
+  width: 340px;
+  height: 50px;
+  position: absolute;
+  left: 140px;
+  background-color: var(--sub-panel-color);
+}
+
+#obs_bomb_kit {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+#obs_round_kills {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  left: 55px;
+  top: 10px;
+}
+
+#obs_skull {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  left: 0px;
+  top: 6px;
+}
+
+#obs_round_kills_text {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  font-family: "Manjari", sans-serif;
+  text-align: left;
+  vertical-align: text-bottom;
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--white-full);
+}
+
+#obs_kills {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 92px;
+  top: 0px;
+}
+
+#obs_assists {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 142px;
+  top: 0px;
+}
+
+#obs_deaths {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 192px;
+  top: 0px;
+}
+
+#obs_kills_k,
+#obs_assists_a,
+#obs_deaths_d {
+  width: 22px;
+  height: 30px;
+  position: relative;
+  top: 10px;
+  font-family: "Manjari", sans-serif;
+  text-align: right;
+  vertical-align: text-bottom;
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--dev-purple);
+}
+
+#obs_kills_text,
+#obs_assists_text,
+#obs_deaths_text {
+  width: 28px;
+  height: 30px;
+  position: relative;
+  left: 24px;
+  top: -20px;
+  font-family: "Manjari", sans-serif;
+  text-align: left;
+  vertical-align: text-bottom;
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--white-full);
+}
+
+#obs_right_section {
+  width: 140px;
+  height: 50px;
+  position: absolute;
+  left: 480px;
+  background-color: var(--main-panel-color);
+}
+
+#players_left {
+  width: 585px;
+  height: 595px;
+  position: fixed;
+  bottom: 250px;
+  left: 10px;
+}
+
+#players_right {
+  width: 585px;
+  height: 595px;
+  position: fixed;
+  bottom: 250px;
+  right: 10px;
+}
+
+#player_section {
+  width: 100%;
+  height: 370px;
+  position: relative;
+  top: 5px;
+}
+
+#box_top {
+  width: 100%;
+  height: 70px;
+  background-color: var(--main-panel-color);
+}
+
+#box_main {
+  width: 335px;
+  height: 70px;
+  position: absolute;
+}
+
+#main_primary {
+  width: 335px;
+  height: 50%;
+  left: 10px;
+  position: relative;
+  font-family: "Manjari", sans-serif;
+  text-align: left;
+  vertical-align: text-bottom;
+  line-height: 48px;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--white-full);
+}
+
+#players_right #main_primary,
+#players_right #main_secondary {
+  width: 350px;
+  text-align: right;
+  left: -10px;
+}
+
+#main_secondary {
+  width: 100%;
+  height: 50%;
+  left: 10px;
+  position: relative;
+  font-family: "Manjari", sans-serif;
+  text-align: left;
+  vertical-align: text-bottom;
+  line-height: 34px;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--white-full);
+}
+
+#players_right > #box_section > #box_top > #box_main {
+  right: 10px;
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  vertical-align: text-bottom;
+  line-height: 76px;
+  font-size: 28px;
+  font-weight: normal;
+  color: var(--white-full);
+}
+
+.box_heading {
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+
+#box_heading_text {
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  vertical-align: text-bottom;
+  line-height: 23px;
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--white-full);
+  position: relative;
+}
+
+#box_heading_subtext {
+  font-family: "Manjari", sans-serif;
+  text-align: left;
+  vertical-align: text-bottom;
+  line-height: 23px;
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--white-full);
+  position: relative;
+  top: -23px;
+  left: 246px;
+}
+
+#player1,
+#player2,
+#player3,
+#player4,
+#player5 {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.player_main_holder {
+  width: 405px;
+  height: 70px;
+  position: absolute;
+}
+
+#players_right .player_main_holder {
+  left: 180px;
+}
+
+.player_side_bar {
+  width: 5px;
+  height: 60px;
+  top: 5px;
+  position: absolute;
+  background-color: var(--dev-purple);
+}
+
+#players_right .player_side_bar {
+  left: 400px;
+}
+
+.player_image_holder {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 5px;
+  background-color: var(--sub-panel-color);
+}
+
+#players_right .player_image_holder {
+  left: 330px;
+}
+
+#player_image {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+#player_image.dead {
+  filter: grayscale(100%);
+}
+
+.player_section_top {
+  width: 325px;
+  height: 50%;
+  position: absolute;
+  background-color: var(--main-panel-color);
+}
+
+#players_left .player_section_top {
+  left: 75px;
+}
+
+#players_right .player_section_top {
+  right: 75px;
+}
+
+.player_health_bar {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#players_right .player_health_bar {
+  float: right;
+}
+
+#players_left .player_health_bar {
+  float: left;
+}
+
+.player_health {
+  width: 185px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+#players_left .player_health {
+  left: 0px;
+}
+
+#players_right .player_health {
+  right: 0px;
+}
+
+#player_health_text {
+  font-family: "Manjari", sans-serif;
+  vertical-align: text-bottom;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  position: relative;
+  color: var(--white-full);
+}
+
+.player_alias {
+  width: 185px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+#players_left .player_alias {
+  left: 40px;
+}
+
+#players_right .player_alias {
+  right: 40px;
+}
+
+#player_alias_text {
+  font-family: "Manjari", sans-serif;
+  vertical-align: text-bottom;
+  line-height: 40px;
+  font-size: 20px;
+  font-weight: normal;
+  position: relative;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--white-full);
+}
+
+#players_left #player_alias_text {
+  text-align: left;
+  left: 150px;
+}
+
+#players_right #player_alias_text {
+  text-align: right;
+  right: 150px;
+}
+
+.player_section_bottom {
+  width: 325px;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  background-color: var(--sub-panel-color);
+}
+
+#players_left .player_section_bottom {
+  left: 75px;
+}
+
+#players_right .player_section_bottom {
+  left: 5px;
+}
+
+.player_current_money {
+  width: 70px;
+  height: 100%;
+  position: absolute;
+}
+
+#players_left .player_current_money {
+  left: 60px;
+}
+
+#players_right .player_current_money {
+  left: 195px;
+}
+
+#player_current_money_text {
+  font-family: "Manjari", sans-serif;
+  vertical-align: text-bottom;
+  line-height: 42px;
+  font-size: 18px;
+  font-weight: normal;
+  position: relative;
+  color: var(--color-moneys);
+}
+
+#players_left #player_current_money_text {
+  text-align: left;
+  left: 1px;
+}
+
+#players_right #player_current_money_text {
+  text-align: left;
+  left: 7px;
+}
+
+.player_round_kills {
+  width: 35px;
+  height: 100%;
+  position: absolute;
+}
+
+#players_left .player_round_kills {
+  left: 130px;
+}
+
+#players_right .player_round_kills {
+  left: 160px;
+}
+
+#player_skull {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 9px;
+}
+
+#players_left #player_skull {
+  left: 0px;
+}
+
+#players_right #player_skull {
+  right: 0px;
+}
+
+#player_round_kills_text {
+  font-family: "Manjari", sans-serif;
+  vertical-align: text-bottom;
+  line-height: 42px;
+  font-size: 20px;
+  font-weight: normal;
+  position: relative;
+  color: var(--white-full);
+}
+
+#players_left #player_round_kills_text {
+  text-align: left;
+  left: 20px;
+}
+
+#players_right #player_round_kills_text {
+  text-align: right;
+  right: 20px;
+}
+
+#player_kills_k,
+#player_assists_a,
+#player_deaths_d {
+  width: 32px;
+  height: 30px;
+  position: relative;
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  vertical-align: text-bottom;
+  line-height: 42px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--dev-purple);
+}
+
+#player_kills_text,
+#player_assists_text,
+#player_deaths_text {
+  width: 32px;
+  height: 30px;
+  position: relative;
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  vertical-align: text-bottom;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--white-full);
+}
+
+#player_spent_text {
+  width: 80px;
+  height: 60px;
+  position: relative;
+  left: 5px;
+  font-family: "Manjari", sans-serif;
+  text-align: left;
+  vertical-align: text-bottom;
+  line-height: 65px;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--color-bomb);
+}
+
+#left_team_ult {
+  width: 195px;
+  height: 53px;
+  position: fixed;
+  left: 12.1%;
+  top: 70px;
+}
+
+#right_team_ult {
+  width: 195px;
+  height: 35px;
+  position: fixed;
+  float: left;
+  left: 75.6%;
+  top: 70px;
+}
+
+#left_team_ult #ultimate_image {
+  width: 195px;
+  height: 35px;
+  position: relative;
+  left: 0%;
+  top: 0px;
+  /* float: left; */
+  /* margin-right: 10px; */
+  /* display: inline; */
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: row-reverse;
+  /* margin-right: 5px; */
+}
+
+#right_team_ult #ultimate_image {
+  width: 195px;
+  height: 35px;
+  position: relative;
+  left: 0%;
+  top: 0px;
+  /* float: left; */
+  /* margin-right: 10px; */
+  /* display: inline; */
+  display: inline-block;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  /* margin-right: 5px; */
+  justify-content: flex-start;
+}
+
+#ultimate_image_1,
+#ultimate_image_2,
+#ultimate_image_3,
+#ultimate_image_4,
+#ultimate_image_5 {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  max-height: 35px;
+  max-width: 35px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-left: 5px;
+}
+
+#ultimate_image_6,
+#ultimate_image_7,
+#ultimate_image_8,
+#ultimate_image_9,
+#ultimate_image_10 {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  max-height: 35px;
+  max-width: 35px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 5px;
+}
+
+#left_team_ult #ultimate_cooldown {
+  width: 195px;
+  height: 35px;
+  position: relative;
+  left: 0%;
+  top: 0px;
+  /* float: left; */
+  /* margin-right: 10px; */
+  /* display: inline; */
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: row-reverse;
+  /* margin-right: 5px; */
+}
+
+#right_team_ult #ultimate_cooldown {
+  width: 195px;
+  height: 35px;
+  position: relative;
+  left: 0%;
+  top: 0px;
+  /* float: left; */
+  /* margin-right: 10px; */
+  /* display: inline; */
+  display: inline-block;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  /* margin-right: 5px; */
+  justify-content: flex-start;
+}
+
+#ultimate_cooldown_1,
+#ultimate_cooldown_2,
+#ultimate_cooldown_3,
+#ultimate_cooldown_4,
+#ultimate_cooldown_5 {
+  width: 35px;
+  height: 18px;
+  position: relative;
+  top: 0px;
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  vertical-align: text-bottom;
+  line-height: 23px;
+  font-size: 14px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: var(--main-panel-color);
+  margin-left: 5px;
+}
+
+#ultimate_cooldown_6,
+#ultimate_cooldown_7,
+#ultimate_cooldown_8,
+#ultimate_cooldown_9,
+#ultimate_cooldown_10 {
+  width: 35px;
+  height: 18px;
+  position: relative;
+  top: 0px;
+  font-family: "Manjari", sans-serif;
+  text-align: center;
+  vertical-align: text-bottom;
+  line-height: 23px;
+  font-size: 14px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: var(--main-panel-color);
+  margin-right: 5px;
+}
+
+:root {
+  --main-panel-color: rgba(12, 15, 18, 0.75);
+  --sub-panel-color: rgba(12, 15, 18, 0.6);
+  --white-dull: rgba(250, 250, 250, 0.25);
+  --white-full: rgba(250, 250, 250, 1);
+  --white-half: rgba(250, 250, 250, 0.5);
+  --color-moneys: #a7d32e;
+  --dev-purple: rgba(200, 0, 255, 1);
+  --color-t: #c19511;
+  --color-ct: #5788a8;
+  --color-new-t: #f0c941;
+  --color-new-ct: #5ab8f4;
+  --color-bomb: #f22222;
+  --color-defuse: #2222f2;
+  --bg-main: rgb(26, 29, 29);
+  --bg-main-peak: rgb(45, 51, 51);
+  --current-selection: rgb(45, 51, 51);
+  --current-selection-peak: rgb(58, 65, 65);
+  --blk-shadow: rgba(0, 0, 0, 0.75);
+  --wht-shadow: rgba(255, 255, 255, 0.75);
+  --player-name-bg: rgba(0, 0, 0, 0.5);
+  --white-text: rgb(230, 230, 230);
+  --color-radiant: rgb(32, 64, 32);
+  --color-dire: rgb(64, 32, 32);
+  --screen-width: 1920px;
+  --screen-height: 1080px;
+}
+
+/*@import "fonts.css";*/
+
+@property --info-left {
+  syntax: "<color>";
+  initial-value: rgb(26, 29, 29);
+  inherits: false;
+}
+
+@property --info-right {
+  syntax: "<color>";
+  initial-value: rgb(26, 29, 29);
+  inherits: false;
+}
+
+@keyframes active_selection {
+  from {
+    background-color: var(--current-selection);
+  }
+  to {
+    background-color: var(--current-selection-peak);
+  }
+}
+
+
+
+
+
+

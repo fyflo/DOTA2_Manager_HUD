@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DOTA2 Team Manager</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="/favicon.ico" type="image/png">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Боковое меню -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="/images/logo.png" alt="DOTA2 Manager">
+                <h1>DOTA2 Manager</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <button class="nav-button active" data-section="match-section">
+                        <i class="fas fa-gamepad"></i>
+                        Создать Матч
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-button" data-section="teams-section">
+                        <i class="fas fa-users"></i>
+                        Создать Команду
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-button" data-section="players-section">
+                        <i class="fas fa-user"></i>
+                        Создать Игрока
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-button" data-section="scoreboard-section">
+                        <i class="fas fa-table"></i>
+                        Скорборд
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-button" data-section="huds-section">
+                        <i class="fas fa-desktop"></i>
+                        HUD'ы
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Основной контент -->
+        <main class="main-content">
+            <!-- Секция матча -->
+            <section id="match-section" class="content-section active">
+                <h2>Создать Матч</h2>
+                <div class="match-creator">
+                    <form id="createMatchForm">
+                        <div class="form-group">
+                            <label for="team1Select">Команда 1</label>
+                            <select id="team1Select" required>
+                                <option value="">Выберите команду</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="team2Select">Команда 2</label>
+                            <select id="team2Select" required>
+                                <option value="">Выберите команду</option>
+                            </select>
+                            
+                        </div>
+                    
+                        <button type="submit" class="save-btn">Создать матч</button>
+                    </form>
+                </div>
+                 <!-- Добавляем список матчей -->
+                <div class="matches-list">
+                    <h3>Текущие матчи</h3>
+
+                <div class="matches-container" id="matches-list">
+                    <!-- Матчи будут добавляться динамически через JavaScript -->
+                </div>
+                </div>
+                <div id="editMatchModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">Редактор матча</span>
+                        <form id="editMatchForm">
+                            <div class="team-container-edit">
+                                <div class="form-group">
+                                    <label for="editTeam1">Команда 1:</label>
+                                    <select name="team1" id="editTeam1" required>
+                                        <option value="">Выберите команду</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="editTeam2">Команда 2:</label>
+                                    <select name="team2" id="editTeam2" required>
+                                        <option value="">Выберите команду</option>
+                                    </select>
+                                </div>
+                                <button type="button" id="editSwapTeamsBtn">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </button>
+                            </div>
+                            <div class="team-container-edit2">
+                                <div class="form-group">
+                                    <label for="editFormat">Формат:</label>
+                                    <select name="format" id="editFormat" required>
+                                    <option value="bo1">BO1</option>
+                                    <option value="bo2">BO2</option>
+                                    <option value="bo3">BO3</option>
+                                    <option value="bo5">BO5</option>
+                                </select>
+                            </div>
+                            </div>
+                            <div class="maps-save-btn">                            
+                             <button type="submit">Сохранить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- Секция команд -->
+            <!-- В секции teams-section -->
+            <div id="teams-section" class="content-section">
+                <div class="form-container">
+                    <form id="team-form" enctype="multipart/form-data">
+                        <input type="text" name="name" placeholder="Название команды" required>
+                        <input type="text" name="region" placeholder="Регион">
+                        <div class="file-input-container">
+                            <input type="file" name="logo" id="team-logo" accept="image/*">
+                            <label for="team-logo">Выберите логотип команды</label>
+                        </div>
+                        <button type="submit">Добавить команду</button>
+                    </form>
+                </div>
+                <div class="section-header">
+                    <h2>Управление командами</h2>
+                </div>
+                <div class="teams-container" id="teams-list">
+                    <!-- Команды будут добавлены динамически -->
+                </div>
+            </div>
+            <!-- Секция игроков -->
+            <section id="players-section" class="content-section">
+                <h2>Управление игроками</h2>
+                <form id="player-form">
+                    <input type="text" name="nickname" placeholder="Никнейм" required>
+                    <input type="text" name="realName" placeholder="Реальное имя">
+                    <input type="text" name="steam64" placeholder="Steam64 ID" required>
+                    <select name="teamId">
+                        <option value="">Выберите команду</option>
+                    </select>
+                    <input type="file" name="avatar" accept="image/*">
+                    <button type="submit">Добавить игрока</button>
+                </form>
+                <div id="players-list" class="players-container"></div>
+            </section>
+
+            <!-- В index.html, секция скорборда -->
+            <section id="scoreboard-section" class="content-section">
+                <h2>Скорборд</h2>
+                <div class="scoreboard">
+                    <div class="team-scores">
+                    </div>
+                    <div class="player-stats-table">
+                        <!-- Таблица будет заполняться динамически -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Секция HUD'ов -->
+            <section id="huds-section" class="content-section">
+                <h2>Доступные HUD'ы</h2>
+                <div id="huds-list" class="huds-grid"></div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Скрипты -->
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="/js/gsiManager.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/overlayManager.js"></script>
+    
+</body>
+</html>
