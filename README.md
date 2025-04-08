@@ -1,7 +1,7 @@
 # DOTA2_Manage_HUD
  
 1. Устанавливаем nodejs с сайта https://nodejs.org
-2. Загружаем папку gamestate_integration в папку cfg, которая расположена по сдерсу: SteamLibrary\steamapps\common\dota 2 beta\game\dota\cfg\
+2. Загружаем папку gamestate_integration в папку cfg, которая расположена по адресу: SteamLibrary\steamapps\common\dota 2 beta\game\dota\cfg\
 3. Запускаем батник start.bat
 4. Запускаем игру и включаем демку или DOTATV.
 
