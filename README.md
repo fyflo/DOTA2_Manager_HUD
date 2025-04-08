@@ -11,6 +11,8 @@
 
 Данные в HUD передаются через data в index.js HUDa.
 
+Рекомендую в свойствах ДОТА2 прописать -allow_third_party_software
+
 ![image](https://github.com/user-attachments/assets/c0ef6ff0-5617-4b8a-8539-c345a5c7d8a4)
 ![image](https://github.com/user-attachments/assets/1a4c98b5-ec01-459e-bb81-bd8add423089)
 ![image](https://github.com/user-attachments/assets/602bbdb8-6766-417e-807b-31d81637b4de)
