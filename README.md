@@ -1,4 +1,4 @@
-# DOTA2_Manage_HUD
+# DOTA2_Manager_HUD
  
 1. Устанавливаем nodejs с сайта https://nodejs.org
 2. Загружаем папку gamestate_integration из папки cfg приложения в папку cfg с игрой, которая расположена по адресу: SteamLibrary\steamapps\common\dota 2 beta\game\dota\cfg\
